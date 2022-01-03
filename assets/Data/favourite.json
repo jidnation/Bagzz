@@ -1,0 +1,18 @@
+[
+  {
+    "image": "assets/images/bag-1.png",
+    "Name": "Capucinus",
+    "atr": "Wallet with chain ",
+    "sub":"Style #36252 0YK0G 1000",
+    "price": 500.0,
+    "unit": 1
+  },
+  {
+    "image": "assets/images/bag-4.png",
+    "Name": "Berkely",
+    "atr": "Wallet with chain ",
+    "sub":"Style #36252 0YK0G 1000",
+    "price": 700.0,
+    "unit": 2
+  }
+]

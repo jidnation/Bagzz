@@ -1,0 +1,38 @@
+[
+  {
+    "image": "assets/images/bag-1.png",
+    "Name": "Capucinus",
+    "atr": "Wallet with chain ",
+    "sub":"Style #36252 0YK0G 1000",
+    "description": "As in handbags, the double ring and bar design defines the wallet shape, highlighting the front flap closure which is tucked inside the hardware. Completed with an organizational interior, the black leather wallet features a detachable chain.",
+    "price": 500.0,
+    "unit": 3
+  },
+  {
+    "image": "assets/images/bag-2.png",
+    "Name": "Artsy",
+    "atr": "Wallet with chain ",
+    "sub": "Style #36252 0YK0G 1000",
+    "description": "As in handbags, the double ring and bar design defines the wallet shape, highlighting the front flap closure which is tucked inside the hardware. Completed with an organizational interior, the black leather wallet features a detachable chain.",
+    "price": 564.0,
+    "unit": 2
+  },
+  {
+    "image": "assets/images/bag-3.png",
+    "Name": "Monogram",
+    "atr": "Wallet with chain ",
+    "sub": "Style #36252 0YK0G 1000",
+    "description": "As in handbags, the double ring and bar design defines the wallet shape, highlighting the front flap closure which is tucked inside the hardware. Completed with an organizational interior, the black leather wallet features a detachable chain.",
+    "price": 1638.0,
+    "unit": 4
+  },
+  {
+    "image": "assets/images/bag-4.png",
+    "Name": "Berkely",
+    "atr": "Wallet with chain ",
+    "sub": "Style #36252 0YK0G 1000",
+    "description": "As in handbags, the double ring and bar design defines the wallet shape, highlighting the front flap closure which is tucked inside the hardware. Completed with an organizational interior, the black leather wallet features a detachable chain.",
+    "price": 700.0,
+    "unit": 2
+  }
+]
