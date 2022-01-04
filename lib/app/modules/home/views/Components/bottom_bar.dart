@@ -9,9 +9,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({
-    Key? key,
-  }) : super(key: key);
+  const BottomNavBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

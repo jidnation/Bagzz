@@ -4,7 +4,7 @@ import 'package:first/app/modules/home/controllers/home_controller.dart';
 import 'package:first/app/modules/home/views/Components/spinner.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
+import 'package:get/get.dart';
 
 class Display extends StatelessWidget {
   final String img;
@@ -67,7 +67,12 @@ class BagShowList extends StatelessWidget {
             itemBuilder: (_, index) {
               return loader.dataLoading.value
                   ? SizedBox(width: 100, height: 100, child: Spinner())
-                  : Display(img: data[index].image, name: data[index].name);
+                  : GestureDetector(
+                      onTap: () {
+                        Get.toNamed('/bag-details', arguments: data[index]);
+                      },
+                      child: Display(
+                          img: data[index].image, name: data[index].name));
             }),
       );
     });

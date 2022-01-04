@@ -15,7 +15,7 @@ class CartTab extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.only(top: 30),
           child: Column(children: [
-            // CartView(favourite: favourite),
+            CartView(favourite: favourite),
             const SizedBox(height: 40),
             Button(
                 text: 'proceed to buy',
@@ -92,54 +92,66 @@ class CartPicked extends StatelessWidget {
               child: Row(children: [
                 Container(
                     width: getProportionateScreenWidth(30),
+                    height: double.maxFinite,
                     color: Colors.black,
-                    child: FaIcon(
-                      FontAwesomeIcons.minus,
-                      color: Colors.white,
+                    child: Center(
+                      child: FaIcon(
+                        FontAwesomeIcons.minus,
+                        color: Colors.white,
+                        size: 15,
+                      ),
                     )),
                 Expanded(
-                  child: Text('$unit!',
-                      style: TextStyle(
-                        color: Colors.black,
-                      )),
+                  child: Center(
+                    child: Text('$unit',
+                        style: TextStyle(color: Colors.black, fontSize: 15)),
+                  ),
                 ),
                 Container(
                     width: getProportionateScreenWidth(30),
+                    height: double.maxFinite,
                     color: Colors.black,
-                    child: FaIcon(
-                      FontAwesomeIcons.plus,
-                      color: Colors.white,
+                    child: Center(
+                      child: FaIcon(
+                        FontAwesomeIcons.plus,
+                        color: Colors.white,
+                        size: 15,
+                      ),
                     ))
               ]))
         ]),
-        const SizedBox(width: 7),
-        Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(name!,
+        const SizedBox(width: 10),
+        Padding(
+          padding: const EdgeInsets.only(top: 40),
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(name!,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 22,
+                  )),
+              SizedBox(height: 5),
+              Text(attr!,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 17,
+                  )),
+              SizedBox(height: 3),
+              Text(adds!,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w300,
+                    fontSize: 13,
+                  ))
+            ]),
+            const SizedBox(height: 30),
+            Text('\$${price!.round()}',
                 style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 22,
+                  fontWeight: FontWeight.w900,
+                  fontSize: 20,
                 )),
-            SizedBox(height: 5),
-            Text(attr!,
-                style: TextStyle(
-                  fontWeight: FontWeight.w400,
-                  fontSize: 17,
-                )),
-            SizedBox(height: 3),
-            Text(adds!,
-                style: TextStyle(
-                  fontWeight: FontWeight.w200,
-                  fontSize: 13,
-                ))
           ]),
-          const SizedBox(height: 20),
-          Text('\$$price!',
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
-                fontSize: 25,
-              )),
-        ]),
+        ),
       ]),
     ]);
   }

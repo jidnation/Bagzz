@@ -4,8 +4,13 @@ class Button extends StatelessWidget {
   final String text;
   final double width;
   final Color color;
+  final double? distance;
   const Button(
-      {Key? key, required this.text, required this.width, required this.color})
+      {Key? key,
+      required this.text,
+      required this.width,
+      required this.color,
+      this.distance})
       : super(key: key);
 
   @override
@@ -13,7 +18,8 @@ class Button extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        margin: const EdgeInsets.only(bottom: 30),
+        margin: EdgeInsets.only(
+            bottom: (distance == null) ? 30 : distance as double),
         width: width,
         height: 40,
         decoration: BoxDecoration(

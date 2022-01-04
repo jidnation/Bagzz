@@ -13,7 +13,10 @@ class Header extends StatelessWidget {
       const SizedBox(width: 15),
       Text('bagzz',
           style: TextStyle(
-              fontWeight: FontWeight.w700, color: Colors.black, fontSize: 25)),
+              decoration: TextDecoration.none,
+              fontWeight: FontWeight.w700,
+              color: Colors.black,
+              fontSize: 25)),
       Spacer(),
       CircleAvatar(
           backgroundImage: AssetImage('assets/images/avater.png'),

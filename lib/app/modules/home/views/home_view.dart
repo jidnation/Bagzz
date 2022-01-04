@@ -16,7 +16,7 @@ class HomeView extends GetView<HomeController> {
         body: GetBuilder<HomeController>(builder: (context) {
           return Body();
         }),
-        bottomNavigationBar: const BottomNavBar(),
+        bottomNavigationBar: BottomNavBar(),
       ),
     );
   }
